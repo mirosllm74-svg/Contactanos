@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contáctanos</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #f8d3ff, #d8b4fe);
+    min-height:100vh;
+}
+
+header{
+    background: linear-gradient(90deg, #ff66c4, #9c27b0);
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+header h1{
+    font-size:2.5rem;
+}
+
+.contenedor{
+    max-width:800px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.formulario{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+
+.formulario h2{
+    color:#9c27b0;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.campo{
+    margin-bottom:15px;
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+    color:#6a1b9a;
+    font-weight:bold;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    border:2px solid #e1bee7;
+    border-radius:10px;
+    outline:none;
+}
+
+input:focus,
+textarea:focus{
+    border-color:#e91e63;
+}
+
+textarea{
+    resize:none;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#e91e63;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#ad1457;
+}
+
+.info-contacto{
+    text-align:center;
+    margin-top:25px;
+    color:#6a1b9a;
+}
+
+footer{
+    margin-top:40px;
+    background:#6a1b9a;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Contáctanos</h1>
+    <p>Estamos aquí para escucharte y ayudarte.</p>
+</header>
+
+<div class="contenedor">
+    <div class="formulario">
+        <h2>Envíanos un mensaje</h2>
+
+        <form>
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" placeholder="ejemplo@correo.com">
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+
+        <div class="info-contacto">
+            <p>📧 contacto@saludmentaljuvenil.com</p>
+            <p>📞 +52 123 456 7890</p>
+            <p>📍 Atención en línea y presencial</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Salud Mental para Adolescentes | Contáctanos</p>
+</footer>
+
+</body>
+</html>
